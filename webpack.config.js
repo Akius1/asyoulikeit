@@ -12,6 +12,9 @@ module.exports = {
     plugins:[
         new HtmlWebpackPlugin({
             template: path.join(__dirname, "public", "index.html"),
+            favicon: "./public/favicon.ico",
+            filename: "index.html",
+            manifest: "./public/manifest.json",
         })
     ],
     devServer:{
@@ -35,7 +38,15 @@ module.exports = {
 
             {
                 test: /\.(ts|tsx)$/,
+                exclude: /node_modules/,
                 loader: "ts-loader"
+            },
+
+            // css loader
+            {
+                test: /\.css$/i,
+                include: path.join(__dirname, "src/styles"),
+                use:['style-loader', 'css-loader', 'postcss-loader']
             }
         ],
     },
