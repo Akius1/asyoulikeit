@@ -1,0 +1,1 @@
+(()=>{const o=document.createElement("div");o.innerHTML="Helllllllooooooo",document.body.append(o)})();
