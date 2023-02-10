@@ -1,13 +1,16 @@
 //tsconfig.json
 
 {
-    "compilerOptions": {
-        "jsx": "react-jsx",
-        "outDir": "./build",
-        "sourceMap": true,
-        "module": "es6",
-        "target": "es3",
-        "allowJs": true,
-        "moduleResolution": "node"
-    }
+  "compilerOptions": {
+    "jsx": "react-jsx",
+    "outDir": "./build",
+    "sourceMap": true,
+    "module": "es6",
+    "target": "es3",
+    "allowJs": true,
+    "types": ["cypress", "node", "jest"],
+    "moduleResolution": "node"
+  },
+  "include": ["src/**/*.ts"],
+  "exclude": ["src/**/*.spec.ts"]
 }
