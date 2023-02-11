@@ -8,7 +8,7 @@
     "module": "es6",
     "target": "es3",
     "allowJs": true,
-    "types": [ "node", "jest"],
+    "types": [ "node", "jest", "@testing-library/jest-dom"],
     "moduleResolution": "node"
   },
   "esModuleInterop": true,
