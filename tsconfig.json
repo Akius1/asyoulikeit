@@ -8,8 +8,10 @@
     "module": "es6",
     "target": "es3",
     "allowJs": true,
-    "types": ["cypress", "node", "jest"],
+    "types": [ "node", "jest"],
     "moduleResolution": "node"
   },
-  "exclude": ["src/**/*.spec.ts"]
+  "esModuleInterop": true,
+  "include": ["src/**/*"],
+  "exclude": ["cypress"]
 }
