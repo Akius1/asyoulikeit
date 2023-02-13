@@ -6,12 +6,12 @@
     "outDir": "./build",
     "sourceMap": true,
     "module": "es6",
-    "target": "es3",
+    "target": "es5",
     "allowJs": true,
     "types": [ "node", "jest", "@testing-library/jest-dom"],
     "moduleResolution": "node"
   },
   "esModuleInterop": true,
-  "include": ["src/**/*"],
+  "include": ["src/**/*", "<rootDir>/src/setupTests.ts"],
   "exclude": ["cypress"]
 }
